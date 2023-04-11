@@ -1,0 +1,53 @@
+<html>
+
+<head>
+   
+    <title>demo javasript</title>
+    <script type="text/javasript">
+        function demointernalalert()
+        {
+            alert('Hello op1!');
+        }
+        function demointernalconfirm()
+        {
+            confirm('are you sure!');
+        }
+        function demointernalprompt()
+        {
+            prompt('enter first name');
+        }
+    </script>
+    <script src="demo.js"></script>
+    <style>
+        body {
+            background-color: yellowgreen;
+        }
+
+        div {
+            background-color: red;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="d1">hello students</div>
+    <hr>
+    <!--pop up & inline selector-->
+    <input type="button" value="alert" onclick="alert('how are you?')" />
+    <input type="button" value="confirm" onclick="confirm('are you sure... ')" />
+    <input type="button" value="prompt" onclick="prompt('enter you name')" />
+    <hr>
+    <input type="button" value="alertinternal" onclick="demointernalalert('gkgjghkj')" />
+    <input type="button" value="confirminternal" onclick="demointernalconfirm('fhtfhyj')" />
+    <input type="button" value="promptinternal" onclick="demointernalprompt('gti675i75')" />
+    <hr>
+    <input type="button" value="alertexternal" onclick="alert('hjkjk')" />
+    <input type="button" value="confirmexternal" onclick="confirm('rthtrj')" />
+    <input type="button" value="promptexternal" onclick="prompt('rghherht')" />
+    <hr>
+</body>
+</html>

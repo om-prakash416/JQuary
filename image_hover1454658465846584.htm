@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        .container-img {
+            position: relative;
+            width: 300px;
+        }
+
+        .image1 {
+            display: block;
+            width: 300px;
+            height: 400px;  
+            transition: 5s;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0;
+            transition-duration:5s;
+            background-color:black;
+        }
+
+        .container-img:hover .overlay {
+            opacity: 1;
+        }
+
+        .container-img:hover .image1 {
+            transform:rotate(36565deg);
+            transform: translate3d(1,1,0);
+            
+        }
+        .text{
+            color: white;font-size: 20px;position: absolute;
+            top: 50%;left: 50%;text-align: center;transform: translate(-50%,-50%,);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-img">
+        <img src="C:\Users\otherb uder\OneDrive\Pictures\Snapchat-489987810.jpg" class="image1" />
+        <div class="overlay">
+        <div class="text"><b>Om Prakash</b> </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title> buttonClick </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#btnshow").attr("disabled", true);
+            $("#btnhide").click(function () {
+                if (confirm("are you sure..??")) {
+                    $("#mydiv").hide(3000);
+                    $(this).attr("disabled", true);
+                    $("#btnshow").attr("disabled", false);
+                    $("#btntoggle").text("show");
+                }
+            });
+            $("btnshow").click(function () {
+                if (confirm("are you sure..?")) {
+                    $("#mydiv").show(3000);
+                    $(this).attr("disable", true);
+                    $("btntoggle").text("hide");
+                }
+            });
+            $("#btntoggle").click(function(){
+                if(confirm("are you sure..?")){
+                    $("#mydiv").toggle(3000);
+                    $("this").text()=="hide")?$($(this).text("show")
+                    $())
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="mydiv" style="height:300px;width: 300px;background-color: yellow;"></div>
+    <hr>
+    <button id="btnhide">hide</button> &nbsp;&nbsp;<button id="btntogglt">show</button>
+    <hr>
+    <button id="btntoggle">hide</button>
+    <hr>
+    <button id="btnplus" style="font-size:xx-large;"><b>+</b></button>&nbsp;&nbsp;<button id="btnminus"
+        style="font-size:xx-large"><b>-</b></button>
+    <hr>
+
+</body>
+
+</html>
