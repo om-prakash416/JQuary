@@ -1,0 +1,11 @@
+advance selector
+
+$("*")
+$("ul li")
+$(".abc,.xyz")
+$("h1,div,p")
+$("p:first")
+$("p:last")
+$("p:last")
+$("li:even")
+$("li:odd")

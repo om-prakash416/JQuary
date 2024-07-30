@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>selector</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <style>
+            #box {
+                padding: 10px;
+                border: 1px solid #000;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Op_Ydv:Mouse events</h2>
+        <div id="box" class="test">
+            <h2>Practice: Comeback is really hard for me but it will be awesome </h2>
+            <p>Lorem ipsum dolor earum dolor sdfgh fcgvhbjnk gvhbjnk  ghj gvhbjn cghbjm </p>
+        </div>
+        
+        <script>
+            $(document).ready(function () {
+            $('#box').click(function(){
+                $('#box').css("background-color","red");
+                // var a = $('#box').html();
+                // console(a);
+            });
+
+             $('#box').dblclick(function () {
+                 $('#box').css("background-color","white");
+            });
+            $('#box').contextmenu(function () {
+                    $('#box').css("background-color", "blue");
+                });
+                $('#box').mouseenter(function () {
+                    $('#box').css("background-color", "gray");
+                });
+                $('#box').mouseleave(function () {
+                    $('#box').css("background-color", "yellow");
+                });
+                $('#box').mousedown(function () {
+                    $('#box').css("background-color", "blue");
+                });
+                $('#box').mousemove(function () {
+                    $('#box').css("background-color", "green");
+                });
+                $('#box').mouseup(function () {
+                    $('#box').css("background-color", "white");
+                });
+             });
+        </script>
+    </body>
+
+</html>

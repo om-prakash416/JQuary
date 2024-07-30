@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jquery basic syntax</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <style>
+            #test,
+            #test1,
+            #test2 {
+                border: 2px solid navy;
+                width: 500px;
+                height: 100px;
+                margin: 50px;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="test">
+            Some Text
+        </div>
+        <div id="test1">
+            <h2>Test Box 1</h2>
+            <p>Lorem ipsum dolor sit,dfghj defrgth fdfg </p>
+        </div>
+        <div id="test2">
+            <h2>Test Box 2</h2>
+            <p>Lorem, ipsum dolor suscipit.</p>
+        </div>
+        <script>
+            $(document).ready(function () {
+
+                var a = $("#test").html();
+                console.log(a);
+
+                $(document).ready(function () {
+                    console.log("Hello");
+                });
+
+                var b = $('#test1').html();
+                console.log(b);
+
+                var c = $('#test2').html();
+                console.log(c);
+            });
+
+        </script>
+    </body>
+
+</html>

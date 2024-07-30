@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard event </title>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            background: pink;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h2>Yahoo Baba :Keyboard events</h2>
+    <div id="box" class="test">
+        <h2>Test Box 2 </h2>
+        <p>Lorem ipsum dolor earum dolor sdfgh fcgvhbjnk gvhbjnk ghj gvhbjn cghbjm </p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('body').keypress(function(){
+                $(this).css('background-color','orange');
+            });
+             $('body').keydown(function () {
+                $(this).css('background-color', 'red');
+            });
+             $('body').keyup(function () {
+                $(this).css('background-color', 'gray');
+            });
+        });
+    </script>
+</body>
+</html>

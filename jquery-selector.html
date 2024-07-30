@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    <style>
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h2>Yahoo Baba :jquery Selector</h2>
+    <div id="box" class="test">
+        <h2>Test Box 2 </h2>
+        <p>Lorem ipsum dolor earum dolor</p>
+    </div>
+    <ul id="list">
+        <li>orange</li>
+        <li class="test">Banana</li>
+        <li>Grapes</li>
+        <li class="test">Apple</li>
+        <li>Guvava</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            // $("#list").css("color","red");
+            // $("#list li").css("border","2px solid blue");
+            // $(".test").css("border", "2px solid navy");
+            // $("*").css("border", "2px solid green");
+            // $("li:first").css("border", "2px solid red");
+            // $("li:last").css("border", "2px solid yellow");
+            // $("ul li:eq(2)").css("border", "2px solid gray");
+            // $("ul li:eq(4)").css("border", "2px solid pink");
+            $("ul li:gt(2)").css("border", "2px solid navy");
+           $("ul li:lt(1)").css("border", "2px solid red");
+        });
+    </script>
+</body>
+</html>
